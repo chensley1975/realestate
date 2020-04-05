@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="background-image: url({% static 'images/contact.jpg' %}); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; height: 1200px">
+	<div class="header">
+		<div class="agent">
+			<img src="{% static 'images/portrait.jpg' %}" alt="">
+			<ul>
+				<li class="mainName">Clayton Hensley</li>
+				<li>Real Estate Agent</li>
+				<li>Oklahoma City, OK</li>
+				<li>(405)496-8178</li>
+			</ul>
+		</div>
+		<a href="https://www.porchandgable.com/" target="_blank">
+			<img src="{% static 'images/logo.jpg' %}" alt="">
+		</a>
+	</div>
+	<div class = "info" >
+		<h2>Contact Me:</h2>
+		<form method="POST">
+			{% csrf_token %}
+			<div class="form">
+				<div class="together">
+					<input type="text" id="fname" name="fname" placeholder="First Name">
+					<input type="text" id="lname" name="lname" placeholder="Last Name">
+				</div>
+				<div class="together">
+					<input type="text" id="email" name="email" placeholder="Email Address">
+					<input type="text" id="phone" name="phone" placeholder="Phone Number">
+				</div>
+				<select id="question" name="question">
+					<option value="buy">Buying</option>
+					<option value="sell">Selling</option>
+					<option value="general">General Question</option>
+				</select>
+				<input type="text" id="subject" name="subject" placeholder="Please enter your question here" style="height: 150px"></textarea>
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

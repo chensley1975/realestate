@@ -1,0 +1,42 @@
+<!DOCTYTPE HTML>
+{% load static %}
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="real estate, Oklahoma City, housing, mortgages, first time home buyer, clayton hensley, realtor">
+		
+		<!-- CSS file and icons -->
+		<script src="https://kit.fontawesome.com/95023e58e0.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+		
+		<!-- Title and Icon -->
+		<title>Clayton Hensley - Real Estate Agent</title>
+		<link rel="icon" href="{% static 'images/icon.png' %}" type="image/x-icon">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="sidenav">
+				<h2></h2>
+				<ul>
+					<li><a href="{% url 'home' %}"><i class="fas fa-home"></i>Home</a></li>
+					<li><a href="{% url 'about' %}"><i class="fas fa-user"></i>About</a></li>
+					<li><a href="{% url 'houses' %}"><i class="fas fa-project-diagram"></i>Homes</a></li>
+					<li><a href="{% url 'contact' %}"><i class="far fa-address-card"></i> Contact</a></li>
+				</ul>
+				<div class="socialMedia">
+					<a href="https://www.facebook.com/Clayton.Hensley.PorchandGable" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				</div>
+			</div>
+			<div class="mainContent">
+				{% block content %}
+
+				{% endblock %}
+			</div>
+			<div class="footer">
+				<p>&copy 2020 House Divided Software</p>
+			</div>
+		</div>
+	</body>
+</html>

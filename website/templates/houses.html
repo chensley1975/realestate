@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="background-image: url({% static 'images/house.jpg' %}); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; height: 1200px">
+	<div class="header">
+		<div class="agent">
+			<img src="{% static 'images/portrait.jpg' %}" alt="">
+			<ul>
+				<li class="mainName">Clayton Hensley</li>
+				<li>Real Estate Agent</li>
+				<li>Oklahoma City, OK</li>
+				<li>(405)496-8178</li>
+				<li>chensley@porchandgable.com</li>
+			</ul>
+		</div>
+		<a href="https://www.porchandgable.com/" target="_blank">
+			<img src="{% static 'images/logo.jpg' %}" alt="">
+		</a>
+	</div>
+	<div class = "houses">
+		<font color="#FEF9E7">
+			<h2>Houses of the week</h2>
+			<p><small>Last updated April 5, 2020</small></p>
+		</font>
+		<br/>
+		<a href="https://www.homesnap.com/Clayton-Hensley" target="_blank"><button type="button">Search All Houses</button></a>
+		<br/><br/>
+		<div class="dividend">
+			<font color="#2E4053">
+			<ul>
+				<li><strong>Less than 200K</strong></li>
+				<li><a href="https://www.homesnap.com/OK/Oklahoma-City/6216-N-College-Street" target="_blank"><img src="{% static 'images/200K.jpg' %}"></a></li>
+				<li>6216 N College St</li>
+				<li>Oklahoma City</li>
+				<li>3 Beds</li>
+				<li>2 Baths</li>
+				<li>1906 sq ft</li>
+			</ul>
+			</font>
+			<font color="#2E4053">
+			<ul>
+				<li><strong>200K - 300K</strong></li>
+				<li><a href="https://www.homesnap.com/OK/Yukon/14109-Drakes-Way" target="_blank"><img src="{% static 'images/300K.jpg' %}"></a></li>
+				<li>14109 Drakes Way</li>
+				<li>Yukon</li>
+				<li>4 Beds</li>
+				<li>2-1/2 Baths</li>
+				<li>2261 sq ft</li>
+			</ul>
+			</font>
+			<font color="#2E4053">
+			<ul>
+				<li><strong>300K - 400K</strong></li>
+				<li><a href="https://www.homesnap.com/OK/Yukon/11601-NW-108th-Terrace" target="_blank"><img src="{% static 'images/400K.jpg' %}"></a></li>
+				<li>11601 NW 108th Ter</li>
+				<li>Yukon</li>
+				<li>4 Beds</li>
+				<li>2-1/2 Baths</li>
+				<li>2243 sq ft</li>
+			</ul>
+			</font>
+			<font color="#2E4053">
+			<ul>
+				<li><strong>Greater than 400K</strong></li>
+				<li><a href="https://www.homesnap.com/OK/Yukon/9901-N-Piedmont-Road" target="_blank"><img src="{% static 'images/500K.jpg' %}"></a></li>
+				<li>9901 N Piedmont Rd</li>
+				<li>Yukon</li>
+				<li>4 Beds</li>
+				<li>3 Baths</li>
+				<li>3132 sq ft</li>
+			</ul>
+			</font>
+		</div>
+	</div>
+</div>
+{% endblock %}

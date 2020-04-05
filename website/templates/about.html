@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div style="background-image: url({% static 'images/about.jpg' %}); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; height: 1200px">
+	<div class="header">
+		<div class="agent">
+			<img src="{% static 'images/portrait.jpg' %}" alt="">
+			<ul>
+				<li class="mainName">Clayton Hensley</li>
+				<li>Real Estate Agent</li>
+				<li>Oklahoma City, OK</li>
+				<li>(405)496-8178</li>
+			</ul>
+		</div>
+		<a href="https://www.porchandgable.com/" target="_blank">
+			<img src="{% static 'images/logo.jpg' %}" alt="">
+		</a>
+	</div>
+	<div class = "info">
+		<p><strong>About Me:</strong></p>
+		<p>Growing up in the Texas panhandle, I learned the value of hard work. Shortly after high school, I joined the Marines and learned to serve while creating friendships with some great people. After completion of my service, I went back to Texas where I started working in the oilfield. I worked several jobs during my long tenure in the oilfield and during my time working, I lived in several places throughout the country finally settling down in Oklahoma. I have lived in Oklahoma for a little more than 15 years now and have made many lasting friendships here and have become an active part of my community. I continue to strive to help others and make the world around me a better place for my kids.</p>
+	</div>
+</div>
+{% endblock %}
